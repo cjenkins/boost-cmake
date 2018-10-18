@@ -37,6 +37,15 @@ _add_boost_lib(
     ${BOOST_SOURCE}/libs/log/src/unhandled_exception_count.cpp
     ${BOOST_SOURCE}/libs/log/src/permissions.cpp
     ${BOOST_SOURCE}/libs/log/src/dump.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/default_filter_factory.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/default_formatter_factory.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/filter_parser.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/formatter_parser.cpp
+    #${BOOST_SOURCE}/libs/log/src/setup/init_from_settings.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/init_from_stream.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/matches_relation_factory.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/parser_utils.cpp
+    ${BOOST_SOURCE}/libs/log/src/setup/settings_parser.cpp
   DEFINE_PRIVATE
     _STDC_CONSTANT_MACROS
     BOOST_SPIRIT_USE_PHOENIX_V3=1
