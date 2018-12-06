@@ -63,6 +63,8 @@ set(BOOST_LIBS_OPTIONAL
   wave
 )
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+
 foreach(lib ${BOOST_LIBS_REQUIRED})
   include("libs/${lib}.cmake")
 endforeach()
