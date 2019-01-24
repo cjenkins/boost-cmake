@@ -1,4 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
+
+if(__CURRENT_FILE_VAR__)
+    return()
+endif()
+set(__CURRENT_FILE_VAR__ TRUE)
+
 project(Boost-CMake)
 
 option(BOOST_DOWNLOAD_TO_BINARY_DIR "Prefer downloading Boost to the binary directory instead of source directory" OFF)
