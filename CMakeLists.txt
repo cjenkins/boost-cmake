@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-if(__CURRENT_FILE_VAR__)
+get_property(boost_has_been_added_property GLOBAL PROPERTY boost_has_been_added_property)
+
+if(boost_has_been_added_property)
     return()
 endif()
-set(__CURRENT_FILE_VAR__ TRUE)
+set_property(GLOBAL PROPERTY boost_has_been_added_property TRUE)
 
 project(Boost-CMake)
 
