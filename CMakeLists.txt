@@ -1,4 +1,12 @@
 cmake_minimum_required(VERSION 3.0.0)
+
+get_property(boost_has_been_added_property GLOBAL PROPERTY boost_has_been_added_property)
+
+if(boost_has_been_added_property)
+    return()
+endif()
+set_property(GLOBAL PROPERTY boost_has_been_added_property TRUE)
+
 project(Boost-CMake)
 
 option(BOOST_DOWNLOAD_TO_BINARY_DIR "Prefer downloading Boost to the binary directory instead of source directory" OFF)
